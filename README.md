@@ -32,6 +32,7 @@ Groupoid Infinity
 - https://github.com/groupoid
 - http://groupoid.co/status.htm
 - https://travis-ci.org/groupoid/om/builds/139767147
+- https://www.researchgate.net/publication/2952858_Henk_A_Typed_Intermediate_Language
 - https://github.com/Gabriel439/Haskell-Morte-Library/blob/master/src/Morte/Core.hs#L531
 - https://github.com/groupoid/om/blob/master/src/om_type.erl#L11
 
@@ -39,4 +40,4 @@ Encoding
 - http://okmij.org/ftp/tagless-final/
 - http://cs.stackexchange.com/questions/42179/what-is-the-difference-between-the-mogensen-scott-and-the-boehm-berarducci-encod 
 - https://gist.github.com/zraffer/ea667528479de6cdbadbd52ad0f9bbef
-- 
+- https://github.com/groupoid/exe/blob/master/prelude/macross-0/Sub.Minimal.macro
