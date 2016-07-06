@@ -1,7 +1,7 @@
 Зачем нам типы
 ==============
 
-![minister](http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif)
+<img src="http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif">
 
 - виды функций http://juan-gandhi.livejournal.com/3565634.html?thread=59185986#t59185986
 
