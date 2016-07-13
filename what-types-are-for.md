@@ -44,4 +44,45 @@ http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif
 
 CPS. RxJava. Future, бенчмарки.
 
+- expression problem; tagless interpreters; encodings;
+
+- The Interpreter Pattern Revisited: https://youtu.be/hmX2s3pe_qk
+
 -----------------------------------------------------------
+
+пока я сижу немного с температурой и из носа капает, а соображалка работает довольно мутно, можно заняться полезной болтовней. в недавнем посте, <a href="http://zeit-raffer.livejournal.com/155837.html#comments">в комментах</a>, возникла идея, чтобы рассказать народу о лучших (и не только) достижениях типостроения на ниве программирования. идея конкретизировалась в том, что можно провести несколько встреч с желающими улучшить свой код людьми, преимущественно начинающими программистами. можно ориентироваться на джаваскриптеров или сишников. хочется передать одновременно и насущную практичность использования развитых систем типов (попробовав Скалу, не хочется возвращаться на Джаву; а уж на языки без типов и совсем невозможно), и ощущение неземной их красоты (!) путем приведения примеров использования избранных фич. первое занятие мотивационное, так что если мы потеряем слушателя на этом этапе, то мы его потеряем совсем. Максим предлагает метод Кашпировского, посмотрим, смогу ли я заряжать взглядом воду, или что там при таком подходе надо заряжать. :)
+
+список топиков, которые можно в таких рамках рассказать (это свалка слов, конечно):
+
+- primitive types; assembler;
+- simply typed; function types: purity, totality; referencial transp.;
+- diagram search; contract programming (pre/post conditions);
+- side-effects; immutability; closures as lambda; curring;
+- generics as type functions; parametric polymorphism;
+- higher order functions; higher kinded types;
+- functors, monads, effects;
+- co/contra-variance; Java arrays failure;
+- inductive datatypes = algebraic + recursive; coinductive;
+- existencial types; phantom types approach; GADT;
+- typeclasses; OOP-classes as typeclasses ("theory of objects");
+- expression problem; tagless interpreters; encodings;
+- dependent types; propositions as types;
+- identity types; HoTT; infinity-groupoids.
+
++ CPS-transform (Observable, Future, Rx***);
++ free theorems, "trampolines";
++ free monad; interpreter pattern; extensible/composable effects;
++ ScalaCakePattern vs. TheReaderMonad (and lazy singletons, and DI-containers);
+
+главный вопрос - что из этого включить в первое занятие? какие примеры использования (их достаточно в интернетах, но вдруг вы предложите нечто прекрасное и простое?)
+
+в качестве языка я планирую использовать Scala и сравнивать, как "нечто делается" с продвинутыми типами и без оных. акцента на лямбда-исчислении и специфических для него вопросах *пока* не будет. ТК будет упоминаться, но абсолютно не будет рассматриваться.
+
+принимаются любые предложения. :)
+
+UPD.
+для чтения
+- The Interpreter Pattern Revisited: https://youtu.be/hmX2s3pe_qk
+- CT in FP: http://comonad.com/reader/
+- E.Kmett https://www.schoolofhaskell.com/user/edwardk
+- Oleg Kiselyov (huge): http://okmij.org/ftp/
