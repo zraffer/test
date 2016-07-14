@@ -22,13 +22,19 @@ http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif
 
 И вот с этим нужно как-то жить, и обеспечивать, чтобы игреки вычислялись когда нужно и записывались куда положено, или по крайней мере в случае провала о том было бы доложено начальству.
 
-в качестве языка я планирую использовать Scala и сравнивать, как "нечто делается" с продвинутыми типами и без оных. акцента на лямбда-исчислении и специфических для него вопросах *пока* не будет. ТК будет упоминаться, но абсолютно не будет рассматриваться.
+в качестве языка я планирую использовать Scala и сравнивать, как "нечто делается" с продвинутыми типами и без оных. акцента на лямбда-исчислении и специфических для него вопросах на данном єтапе не будет. ТК будет упоминаться как иная галактика, но абсолютно не будет рассматриваться.
+
+Материал делится на три части, по отношению его к термину *typeful programming*
+1. pre-typeful programming: imperative viewpoint
+2. currently mainstream of typeful programming: functional paradigm viewpoint
+3. post-typeful programming: dependent types for verification
 
 -------------------------------------------------------
 
 блок 1
 ------
 
+*pre-typeful*
 *взгляд из императивного*
 
 Инженерный подход к управление сложностью = Разбиение кода на модули.
@@ -52,7 +58,7 @@ http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif
 Немного простой мотивации.
 Пример из жизни: Perl.
 Авторитеты индустрии: Facebook => typeful programming for PHP (Hack) and JS (Flow).
-Умные IDE.
+Умные IDE (auto-completion, auto-typecheck).
 
 Рантайм. Динамический тип = теги. Рефлексия и реификация.
 Уровни формального мира/языка: значения, типы, kinds. Намек на уровень 0.
@@ -77,7 +83,10 @@ https://oleksandrmanzyuk.wordpress.com/2014/06/18/from-object-algebras-to-finall
 блок 2
 ------
 
+*current mainstream typeful*
 *взгляд из функционального*
+
+> 'avoid success at all costs'
 
 + CPS. RxJava. Future, бенчмарки в блоге.
 
@@ -85,7 +94,7 @@ https://oleksandrmanzyuk.wordpress.com/2014/06/18/from-object-algebras-to-finall
 - generics as type functions; parametric polymorphism;
 - higher order functions; higher kinded types;
 - functors, monads, effects;
-- inductive datatypes = algebraic + recursive; coinductive;
+- inductive datatypes = algebraic + recursive; coinductive (infinite lists, etc);
 - existencial types; phantom types approach; GADT;
 - typeclasses; OOP-classes as typeclasses ("theory of objects");
 - expression problem; tagless interpreters; encodings;
@@ -103,7 +112,8 @@ https://oleksandrmanzyuk.wordpress.com/2014/06/18/from-object-algebras-to-finall
 блок 3
 ------
 
-*взгляд из логического*
+*post-typeful*
+*взгляд из логики (верификация)*
 
 - formal logics on its own: propositions, operations, predicates, quantifiers.
 - dependent types; universes; erasure;
