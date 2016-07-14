@@ -1,6 +1,9 @@
 Зачем нам типы
 ==============
 
+присказка
+---------
+
 http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif
 
 - виды функций http://juan-gandhi.livejournal.com/3565634.html?thread=59185986#t59185986
@@ -19,61 +22,92 @@ http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif
 
 И вот с этим нужно как-то жить, и обеспечивать, чтобы игреки вычислялись когда нужно и записывались куда положено, или по крайней мере в случае провала о том было бы доложено начальству.
 
+в качестве языка я планирую использовать Scala и сравнивать, как "нечто делается" с продвинутыми типами и без оных. акцента на лямбда-исчислении и специфических для него вопросах *пока* не будет. ТК будет упоминаться, но абсолютно не будет рассматриваться.
+
 -------------------------------------------------------
+
+блок 1
+------
+
+*взгляд из императивного*
 
 Инженерный подход к управление сложностью = Разбиение кода на модули.
 Модули. Интерфейс и реализация. Соединение модулей согласно интерфейсам.
 Функция - минимальный модуль кода. Декларация функции, сигнатура метода.
+- primitive types; assembler;
+- simply typed; function types: purity, totality; referencial transp.;
 Чистые функции, тотальные функции, эффекты, примеры эффектов. Упрощение рассуждений.
+- diagram search;
 Размеры модуля. Классы, пакеты. Тайпклассы.
 Ментальная репрезентация и формальная экспликация.
-Экспликация действий, экспликация данных, экспликация ограничений, укспликация утверждений.
-Инженерия требований.
+Экспликация действий, экспликация данных, экспликация ограничений, экспликация утверждений.
+Инженерия требований. Процессы.
+Языки описания данных.
 Представление о возможных значениях данных при разных запусках кода. Типы.
 Устойчивость кода к изменениям, maturity. Рефакторинг как оздоровление. Устойчивость к рефакорингу.
-Контрактное программирование. Юнит-тесты, TDD, model-checking.
+Контрактное программирование.
+- contract programming (pre/post conditions);
+Юнит-тесты, TDD, model-checking.
+
+Немного простой мотивации.
 Пример из жизни: Perl.
 Авторитеты индустрии: Facebook => typeful programming for PHP (Hack) and JS (Flow).
+Умные IDE.
 
-Рантайм. Динамический тип, теги. Рефлексия и реификация.
+Рантайм. Динамический тип = теги. Рефлексия и реификация.
 Уровни формального мира/языка: значения, типы, kinds. Намек на уровень 0.
-Классы как тайпклассы. Примеры тайпклассов. Атомарность примитивов.
+
+- generics as type functions; parametric polymorphism; erasure;
+- co/contra-variance; Java arrays failure;
+Классы ООП как тайпклассы. Примеры тайпклассов. Атомарность примитивов.
+Наследование. Интерфейсы. vs. composition. ООП без наследования. Плоские иерархии.
 
 Скала. Кейк паттерн. Сравнение.
-Примеры кейков. Моки в тестировании. Графы. Зависимые типы.
-
-CPS. RxJava. Future, бенчмарки.
++ ScalaCakePattern vs. TheReaderMonad (and lazy singletons, and DI-containers);
+Примеры кейков. Моки в тестировании. Графы. Зависимые типы в Скале.
 
 - expression problem; tagless interpreters; encodings;
+https://oleksandrmanzyuk.wordpress.com/2014/06/18/from-object-algebras-to-finally-tagless-interpreters-2/
 
 - The Interpreter Pattern Revisited: https://youtu.be/hmX2s3pe_qk
+- inductive datatypes = shallow hierarchy.
 
 -----------------------------------------------------------
 
-- primitive types; assembler;
-- simply typed; function types: purity, totality; referencial transp.;
-- diagram search; contract programming (pre/post conditions);
+блок 2
+------
+
+*взгляд из функционального*
+
++ CPS. RxJava. Future, бенчмарки в блоге.
+
 - side-effects; immutability; closures as lambda; curring;
 - generics as type functions; parametric polymorphism;
 - higher order functions; higher kinded types;
 - functors, monads, effects;
-- co/contra-variance; Java arrays failure;
 - inductive datatypes = algebraic + recursive; coinductive;
 - existencial types; phantom types approach; GADT;
 - typeclasses; OOP-classes as typeclasses ("theory of objects");
 - expression problem; tagless interpreters; encodings;
-- dependent types; propositions as types;
-- identity types; HoTT; infinity-groupoids.
 
-+ CPS-transform (Observable, Future, Rx***);
 + free theorems, "trampolines";
 + free monad; interpreter pattern; extensible/composable effects;
-+ ScalaCakePattern vs. TheReaderMonad (and lazy singletons, and DI-containers);
-
-в качестве языка я планирую использовать Scala и сравнивать, как "нечто делается" с продвинутыми типами и без оных. акцента на лямбда-исчислении и специфических для него вопросах *пока* не будет. ТК будет упоминаться, но абсолютно не будет рассматриваться.
 
 для чтения
-- The Interpreter Pattern Revisited: https://youtu.be/hmX2s3pe_qk
 - CT in FP: http://comonad.com/reader/
 - E.Kmett https://www.schoolofhaskell.com/user/edwardk
 - Oleg Kiselyov (huge): http://okmij.org/ftp/
+
+-----------------------------------------------------------
+
+блок 3
+------
+
+*взгляд из логического*
+
+- formal logics on its own: propositions, operations, predicates, quantifiers.
+- dependent types; universes; erasure;
+- propositions as types; Curty-Howard correspondence; universe of propositions;
+- pre|post conditions again; invariants;
+- structures and "axioms"; models; encodings again;
+- identity types; HoTT; types as spaces; spaces as infinity-groupoids;
