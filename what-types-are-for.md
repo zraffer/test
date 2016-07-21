@@ -57,7 +57,7 @@ http://i79.fastpic.ru/big/2016/0420/67/89479941bd74ddf32c6820bbdea0f667.gif
 
 Немного простой мотивации.
 Пример из жизни: Perl.
-Авторитеты индустрии: Facebook => typeful programming for PHP (Hack) and JS (Flow).
+Авторитеты индустрии: Facebook => typeful programming for PHP (Hack) and JS (Flow) (both written in OCaml(Reason)! ).
 Умные IDE (auto-completion, auto-typecheck).
 
 Рантайм. Динамический тип = теги. Рефлексия и реификация.
