@@ -33,11 +33,11 @@
 3. post-typeful programming: dependent types for verification
 
 samples:  
-
-+ billion dollar mistake
-+ java heap pollution
-+ C/C++ vulnerabilities
+- billion dollar mistake
+- java heap pollution
+- C/C++ vulnerabilities
 
 -------------------------------------------------------
 
 www.lucacardelli.name/Papers/TypefulProg.pdf
+
