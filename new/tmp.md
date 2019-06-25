@@ -30,7 +30,7 @@
 - [E. __Aleiferi__] _«Cartesian Double Categories with an Emphasis on Characterizing Spans»_ (2018)
 - [S. __Lack__, R.F.C. __Walters__, R.J. __Wood__] _«Bicategories of spans as cartesian bicategories»_ (2009)
 
-## directed
+## type th.
 
 - [D. R. __Licata__, R. __Harper__] _«2-Dimensional Directed Type Theory»_ (2011)
 - [M. S. __New__, D. R. __Licata__] _«Call-by-name Gradual Type Theory»_ (2018)
