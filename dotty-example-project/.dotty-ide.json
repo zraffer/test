@@ -1,0 +1,17 @@
+[ {
+  "id" : "root/compile",
+  "compilerVersion" : "0.16.0-RC3",
+  "compilerArguments" : [ "-bootclasspath", "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/classes" ],
+  "sourceDirectories" : [ "/home/user/github/test/dotty-example-project/src/main/scala-0.16", "/home/user/github/test/dotty-example-project/src/main/scala", "/home/user/github/test/dotty-example-project/src/main/java", "/home/user/github/test/dotty-example-project/target/scala-0.16/src_managed/main" ],
+  "dependencyClasspath" : [ "/home/user/.ivy2/cache/ch.epfl.lamp/dotty-library_0.16/jars/dotty-library_0.16-0.16.0-RC3.jar", "/home/user/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar" ],
+  "classDirectory" : "/home/user/github/test/dotty-example-project/target/scala-0.16/classes",
+  "projectDependencies" : [ ]
+}, {
+  "id" : "root/test",
+  "compilerVersion" : "0.16.0-RC3",
+  "compilerArguments" : [ "-bootclasspath", "/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.212.b04-0.fc30.x86_64/jre/classes" ],
+  "sourceDirectories" : [ "/home/user/github/test/dotty-example-project/src/test/scala-0.16", "/home/user/github/test/dotty-example-project/src/test/scala", "/home/user/github/test/dotty-example-project/src/test/java", "/home/user/github/test/dotty-example-project/target/scala-0.16/src_managed/test" ],
+  "dependencyClasspath" : [ "/home/user/github/test/dotty-example-project/target/scala-0.16/classes", "/home/user/.ivy2/cache/ch.epfl.lamp/dotty-library_0.16/jars/dotty-library_0.16-0.16.0-RC3.jar", "/home/user/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar" ],
+  "classDirectory" : "/home/user/github/test/dotty-example-project/target/scala-0.16/test-classes",
+  "projectDependencies" : [ "root/compile" ]
+} ]
